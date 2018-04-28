@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GDI Boulder/Denver: UX 101</title>
+
+		<meta name="description" content="An introduction to user experience design.">
+		<meta name="author" content="Paul McAleer">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="dist/css/reveal.css">
+		<link rel="stylesheet" href="dist/css/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor --><link rel="stylesheet" href="dist/css/gdilight.css">
+		<!-- dark editor <link rel="stylesheet" href="dist/css/dark.css">-->
+		<!-- <link rel="stylesheet" href="dist/css/zenburn.css"> -->
+
+		<link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!-- If use the PDF print sheet so students can print slides-->
+
+		<link rel="stylesheet" href="dist/css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+        <script src="dist/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <!-- Opening -->
+				<section>
+					<img src="dist/img/circle-gdi-logo.png" alt="GDI Logo" class="noborder"/>
+					<h1>User Experience (UX) 101</h1>
+					<h2>Girl Develop It Boulder/Denver<br />March 3, 2018</h2>
+					<p>
+						Paul McAleer
+					</p>
+				</section>
+			
+				<section>
+					<h1>Good morning.</h1>
+					<p>
+						Introductions and the like.
+					</p>
+				</section>
+			
+				<section>
+					<h1>Ground rules for the day</h1>
+					<ul>
+						<li>Breaks are scheduled, but take breaks when you need to.</li>
+						<li>Participation makes this better.</li>
+						<li>Ask lots of questions, anytime.</li>
+						<li>You're here because you matter.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Agenda</h1>
+					<p>
+						<em>Times subject to change depending on what we need.</em>
+					</p>
+					<ul>
+						<li>9:00-9:45: Introductions, what is UX, and today's challenge</li>
+						<li>9:45-10:30: Research & Goals</li>
+						<li>10:30-11:15: Information Architecture</li>
+						<li>11:15-11:30: Break</li>
+						<li>11:30-12:00: Sketching/Wireframing</li>
+						<li>12:00-12:45: Design Review</li>
+						<li>12:45-1:00: Q&A/Parking Lot Review/What's Next</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>Things we'll learn today</h1>
+					<ul>
+						<li>What UX is</li>
+						<li>What UX is not</li>
+						<li>An overview of the UX field</li>
+						<li>UX activities & involvement through projects</li>
+						<li>How to do some of the key activities</li>
+					</ul>
+				</section>
+			
+				<section>
+					<h1>What is UX?</h1>
+					<p>
+					User experience design is a set of activities and philosophies that ensure users’ needs are understood, addressed, and – ideally – surpassed.
+					<br />
+					</p>
+					<p>
+					UX can encompass many other disciplines, and many other disciplines can encompass UX.
+					</p>
+				</section>
+				
+				<section>
+					<h1>User experience design without user research is not user experience design.</h1>
+				</section>
+				
+				<section>
+					<h1>User interface design is not user experience design.</h1>
+				</section>
+				
+				<section>
+					<p>...so why do the research and everything else that goes with it?</p>
+					<h1>You are not your user!</h1>
+				</section>
+				
+				<section>
+					<h1>Let's talk about good and bad experiences.</h1>
+					<p>
+					Not in life. Well... maybe in life.
+					</p>
+				</section>
+				
+				<section>
+					<h1>UX is an enormous field.</h1>
+					
+					<p>
+					Since definitions vary, what's included in a job is going to
+					vary from organization to organization.
+					</p>
+					
+					<p>
+					Some companies hire generalists. Some hire specialists.
+					Knowing a little of everything is a good idea.
+					</p>
+					
+				</section>
+
+				<section>
+					<h1>You don't <em>have</em> to code.</h1>
+					
+					<p>
+					You <em>do</em> have to know the mediums you're working in.
+					</p>
+				</section>
+
+				
+				<section>
+					<h1>Today's challenge!</h1>
+					<p>Design a small site and flow for a site that sells <strong>jeans.</strong></p>
+				</section>
+				
+				
+				
+				
+				<section>
+					<h1>Research</h1>
+				</section>
+				
+				<section>
+					<h2>Why research?</h2>
+					
+					<h3>In short: it's the foundation of understanding.</h3>
+				</section>
+				
+				<section>
+					<h2>Some types of research</h2>
+					
+					<ul>
+						<li>Stakeholder interviews</li>
+						<li>User interviews</li>
+						<li>Competitive analysis</li>
+						<li>Current state evaluation</li>
+						<li>Ethnographic research</li>
+						<li>Focus groups</li>
+						<li>Analytic analysis</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>It's research time.</h2>
+					
+					<p>
+					Here's what we're going to do:
+					</p>
+					
+					<ol>
+						<li>Identify questions that help gain understanding.</li>
+						<li>Break up into groups of 3.</li>
+						<li>Designate an interviewee, a moderator, and a notetaker.</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Questions</h2>
+					
+					<ol>
+						<li class="fragment">Tell me about the last time you bought something online.</li>
+						<li class="fragment">What's the most important thing to you when buying jeans?</li>
+						<li class="fragment">If you could change one thing about buying jeans, what would it be?</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Let's analyze the information we've got.</h2>
+					
+					<p>
+					Some things we're looking for:
+					</p>
+					
+					<ul>
+						<li>Trends</li>
+						<li>Common ideas, thoughts</li>
+						<li>Outliers</li>				
+					</ul>
+					
+					<p>
+					Note that we're <strong>not</strong> looking for solutions yet.
+					</p>
+				</section>
+				
+				
+				
+				<section>
+					<h1>Information Architecture</h1>
+				</section>
+
+				<section>
+					<h2>What is IA?</h2>
+					
+					<p class="fragment roll-in">
+					Only the most important thing ever!
+					</p>
+					
+					<p class="fragment roll-in">
+					OK, that might be a bit much, but it's <em>pretty darned vital</em>.
+					</p>
+					
+				</section>
+				
+				<section>
+					<h2>Information architecture is a way of organizing,
+					naming, and structuring information.</h2>
+				</section>
+				
+				<section>
+					<h2>
+					“Information architecture is the way that we arrange the parts of something to make it understandable.” - Abby Covert
+					</h2>
+				</section>
+				
+				<section>
+					<h2><img src="images/iu.jpeg" width="800" /></h2>
+					<ul>
+					<li class="fragment roll-in">Language</li>
+					<li class="fragment roll-in">Iconography</li>
+					<li class="fragment roll-in">Priority</li>
+					<li class="fragment roll-in">Consistency</li>
+					</ul>
+				</section>
+				
+				<section>
+					<p>A good information architecture makes sense.<br />And we notice
+					when it doesn't.</p>
+					<img src="images/clams.jpg" class="fragment roll-in"  />
+				</section>
+				
+				<section>
+					<h2>It's time to gather and organize.</h2>
+					
+					<p>
+					Here's what we're going to do:
+					</p>
+					
+					<ol>
+						<li>Grab Post-Its and answer a few simple questions.</li>
+						<li>Group and name items together.</li>
+						<li>Prioritize what matters most.</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>One answer per Post-It, please.</h2>
+					
+					<ul>
+						<li class="fragment">What are the qualifiers for a pair of jeans?</ol>
+						<li class="fragment">What information matters?</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Now let's group items and name them.</h2>
+				</section>
+				
+				
+				<section>
+					<h1>Break!</h1>
+				</section>
+
+
+				<section>
+					<h1>Sketching & Wireframing</h1>
+				</section>
+
+				<section>
+					<h2>Wireframing is a way to express a flow through a process or individual screens in a product.</h2>
+				</section>
+				
+				<section>
+					<p>Wireframes may be presented in different levels of <strong>fidelity</strong>, depending upon what’s needed.</p>
+
+					<ul>
+					<li>Low fidelity: Sketches, napkins, Post-Its, whiteboards. Rough!</li>
+					<li>Medium fidelity: Additional detail where needed, especially for critical interactions/content/flows</li>
+					<li>High fidelity: Everything is accounted for!</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="images/wire.png" />
+				</section>
+
+				<section>
+					<h2>It's time to sketch wireframes.</h2>
+					
+					<p>
+					Here's what we're going to do: a <em>design charrette</em>!
+					</p>
+					
+					<ol>
+						<li>6-up / 3-up / 1-up individually.</li>
+						<li>1-up as teams.</li>
+						<li>Present your work.</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>What we'll be sketching</h2>
+					
+					<p>
+					The <strong>product details</strong> page for our jean-selling site. This is the page where people can
+					actually buy the jeans, see what they look like, and so forth.
+					</p>
+					
+				</section>
+			
+			
+			
+				<section>
+					<h1>Design Review</h1>
+				</section>
+			
+				<section>
+					<h2>What's a design review?</h2>
+					
+					<p>
+					It's a way to evaluate how successful or unsuccessful the design is as a part
+					of your overall feedback cycle.
+					</p>
+					
+				</section>
+
+				
+				<section>
+					<p>
+					Design reviews can be formal, informal, or somewhere in-between. This isn’t quite
+					a critique – where we’re all internally discussing and judging the work – but
+					it’s close.
+					</p>
+				</section>
+			
+				<section>
+					<h1>Recap & Q&A</h1>
+				</section>
+
+				<section>
+					<h2>And that's it!</h2>
+					<h2>Thank you.</h2>
+				</section>
+			</div>
+  		<footer>
+        <div class="copyright">
+          UX 101 -- Boulder/Denver --
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+		</div>
+
+
+		<script src="dist/js/head.min.js"></script>
+		<script src="dist/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'dist/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
